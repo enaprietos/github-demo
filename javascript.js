@@ -1,5 +1,28 @@
 var cont=0;
-	$(document).ready(function(){
+
+function initEvents(){
+	$("td").click(function(e){
+		
+		
+		var but = $(this);
+	
+		var player = turn%2==0 ? "equis" : "circulo";
+		
+		$(but).children().addClass(player);
+		turn++;
+		console.log($(but).children())
+	
+	});
+	
+	$("#limpiaButton").click(function(){
+		$("td div").removeClass("circulo");
+		$("td div").removeClass("equis");
+		$("td div").addClass("button");
+		turn = 0;
+	});
+}
+
+$(document).ready(function(){
 	for(var a=0; a<3; a++){
 		
 		$("table").append("<tr id='f"+a+"'></tr>")
@@ -24,26 +47,6 @@ var cont=0;
 	
 	var turn = 0;
 	
-	$("td").click(function(e){
-	
-	
-			var but = $(this);
-		
-			var player = turn%2==0 ? "equis" : "circulo";
-			
-			$(but).children().addClass(player);
-			turn++;
-			console.log($(but).children())
-		
-	});
-	
-	
-	
-	$("#limpiaButton").click(function(){
-		$("td div").removeClass("circulo");
-		$("td div").removeClass("equis");
-		$("td div").addClass("button");
-		turn = 0;
-	});
+	initEvents();
 	
 });
