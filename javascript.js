@@ -22,29 +22,35 @@ function initEvents(){
 	});
 }
 
-$(document).ready(function(){
-	for(var a=0; a<3; a++){
+function crear(numRow, numCol)
+		{
+			for(var a=0; a<numRow; a++)
+			{
+				$("table").append("<tr id='f"+a+"'></tr>");
+				for(var b=10; b<13; b++)
+				{
+					$("#f"+a).append("<td id='f"+a+"c"+b+"'><div class='lifes'></div> </td>");
+					console.log($("#f"+a+"c"+b+""));
+				}
+			}
 		
-		$("table").append("<tr id='f"+a+"'></tr>")
-		for(var b=10; b<13; b++){
-		
-			$("#f"+a).append("<td id='f"+a+"c"+b+"'><div class='lifes'></div> </td>")
-			console.log($("#f"+a+"c"+b+""));
-			
-		}
-	}
-	
-		for(var a=0; a<3; a++){
-		
-		
-		for(var b=10; b<13; b++){
-		if(a!=0){
-		var aa=a--;
-			if( ($("#f"+aa+"c"+b+"")) )
-			
-		}
-	}
-	
+			for(var a=0; a<numRow; a++)
+			{
+				for(var b=10; b<numCol; b++)
+				{
+					if(a!=0)
+					{
+						var aa=a--;
+						if( ($("#f"+aa+"c"+b+"")) )
+					
+					}
+				}
+			}
+		} //Final Crear
+
+$(document).ready(function()
+{
+	crear(numRow, numCol);
 	var turn = 0;
 	
 	initEvents();
