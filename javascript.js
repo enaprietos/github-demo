@@ -4,8 +4,7 @@ var cont=0;
 function restar(num)
 {
 
-	var pruebaCristina;
-	var pruebaBarbarahola;
+var a=4;
 	num--;
 }
 
