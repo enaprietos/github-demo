@@ -4,7 +4,8 @@ var cont=0;
 function restar(num)
 {
 
-var a=4;
+	var a=4;
+	var AXPE;
 	num--;
 }
 
