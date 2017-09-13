@@ -4,7 +4,11 @@ var cont=0;
 function restar(num)
 {
 
+<<<<<<< Upstream, based on origin/master
 	var pruebaCristina;
+=======
+	var pruebaBarbarahola;
+>>>>>>> b25b059 [BGC] Ccambio variable
 	num--;
 }
 
