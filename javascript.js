@@ -1,5 +1,11 @@
 var cont=0;
 
+
+function restar()
+{
+	num--;
+}
+
 function initEvents()
 {
 	$("td").click(function(e)
@@ -48,6 +54,8 @@ function crear(numRow, numCol)
 
 $(document).ready(function()
 {
+	var num = 0;
+	restar();
 	crear(numRow, numCol);
 	var turn = 0;
 	initEvents();
