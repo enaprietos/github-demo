@@ -3,6 +3,8 @@ var cont=0;
 
 function restar(num)
 {
+
+	var pruebaBarbara;
 	num--;
 }
 
@@ -58,7 +60,6 @@ function sumar(num){
 
 $(document).ready(function()
 {
-	var pruebaBarbara;
 	var num = 0;
 	restar(num);
 	crear(numRow, numCol);
