@@ -1,7 +1,7 @@
 var cont=0;
 
 
-function restar()
+function restar(num)
 {
 	num--;
 }
@@ -59,7 +59,7 @@ function sumar(num){
 $(document).ready(function()
 {
 	var num = 0;
-	restar();
+	restar(num);
 	crear(numRow, numCol);
 	var turn = 0;
 	initEvents();
