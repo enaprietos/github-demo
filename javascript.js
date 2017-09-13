@@ -52,6 +52,10 @@ function crear(numRow, numCol)
 	}
 } //Final Crear
 
+function sumar(num){
+	return num++;
+}
+
 $(document).ready(function()
 {
 	var num = 0;
@@ -59,5 +63,6 @@ $(document).ready(function()
 	crear(numRow, numCol);
 	var turn = 0;
 	initEvents();
+	sumar(num);
 	
 });
