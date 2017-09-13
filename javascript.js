@@ -6,6 +6,7 @@ function restar(num)
 
 	var a=4;
 	var AXPE;
+	var b=5;
 	num--;
 }
 
